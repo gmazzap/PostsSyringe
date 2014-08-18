@@ -1,4 +1,4 @@
-PostsSyringe
+Posts Syringe
 ============
 
 WordPress plugin that helps you to automatically inject CPT posts into the main loop.
