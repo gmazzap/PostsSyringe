@@ -42,11 +42,9 @@ That is possible thanks to the `is_syringe_injected()` template tag.
 Example:
 
     while ( have_posts() ) : the_post(); ?>
-				
-				if ( is_syringe_injected() ) {
-					get_template_part( 'sponsor-entry' );
-				} else {
-          get_template_part( 'content', get_post_format() );
-				}
-				
-		endwhile;
+      if ( is_syringe_injected() ) {
+        get_template_part( 'sponsor-entry' );
+      } else {
+        get_template_part( 'content', get_post_format() );
+      }
+    endwhile;
