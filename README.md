@@ -1,7 +1,11 @@
 PostsSyringe
 ============
 
-WordPress plugin that helps you to automatically inject CPT posts into the main loop. requires PHP 5.3.
+WordPress plugin that helps you to automatically inject CPT posts into the main loop.
+
+Requires PHP 5.3.
+
+##Description##
 
 Posts can be injected using `posts_syringe()` function.
 
@@ -48,3 +52,7 @@ Example:
         get_template_part( 'content', get_post_format() );
       }
     endwhile;
+
+##License##
+
+GPLv2+
