@@ -104,7 +104,7 @@ class Query {
 
     private function getPerPage( $query ) {
         $total = $query->get( 'posts_per_page' );
-        return floor( $this->args['per_inject'] * ( $total / $this->args['before_each_inject'] ) );
+        return $this->args['per_inject'] * floor( $total / $this->args['before_each_inject'] );
     }
 
 }
