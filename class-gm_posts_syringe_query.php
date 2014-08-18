@@ -64,7 +64,6 @@ class Query {
      */
     public function start( $posts, \WP_Query $query ) {
         remove_filter( current_filter(), [ $this, __FUNCTION__ ] );
-        //$posts = $GLOBALS['wp_the_query']->posts;
         $count = count( $posts );
         if ( $this->args['before_each_inject'] > 0 && ( $count >= $this->args['before_each_inject'] ) ) {
             $this->query_args = apply_filters( 'syringe_query_args', $this->query_args, $this );
